@@ -122,7 +122,7 @@ force_plot.explain <- function(object, baseline = NULL, feature_values = NULL,
 
   # Display results
   tfile <- tempfile(fileext = ".html")
-  shap$save_html(tfile, plot_html = fp)
+  shap$save_html(tfile, plot = fp)
   display <- match.arg(display)
   # Check for dependencies
   if (display == "viewer") {
